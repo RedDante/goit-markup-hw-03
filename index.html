@@ -23,17 +23,19 @@
 
     <div class="container header-container" >
         <nav class="header-navigation " >
-                    <a class="web link" href="">Web<span class="studio">Studio</span></a>
+                    <a class="web link" href="/index.html">Web<span class="studio">Studio</span></a>
         <ul class="header-list  list ">
-               <li><a class="header-item link pres drc"href="">Студия</a></li>
-               <li><a class="header-item link"href="./portfolio.html">Портфолио </a></li>
-               <li><a class="header-item link"href="">Контакты </a></li>
+               <li class="header-left" ><a class="header-item link drc"href="">Студия</a></li>
+               <li class="header-left" ><a class="header-item link drc"href="./portfolio.html">Портфолио </a></li>
+               <li class="" ><a class="header-item link drc"href="">Контакты </a></li>
         </ul>
         </nav>
    
-        <div class="header-connect" >
-              <a class="nav-mail link pres drc" href="mailtoinfo@devstudio.com">info@devstudio.com </a> 
-              <a class="nav-phone link" href="tel:+380961111111"> +380961111111 </a> 
+        <div class=" header-box-right" >
+            <ul class="header-contact-list list" >
+               <li class="header-right" ><a class="nav-mail link pres drc" href="mailtoinfo@devstudio.com">info@devstudio.com </a> </li>
+               <li class="header-right" ><a class="nav-phone link drc" href="tel:+380961111111"> +380961111111 </a> </li>
+            </ul>
         </div>      
     </div>
 
@@ -41,18 +43,15 @@
 
     <!--Герой--------------------------------------------------->
     <section class="hero">
-        
-            <div class="container hero-container" >
-                <h2 class="hero-text">Эффективные решения <br> для вашего бизнеса</h2>
-        
-                <button  class="hero-button" type="button">Заказать услугу</button>
-            </div>
-               
+          <div class="container hero-container">
+                    <h2 class="hero-text">Эффективные решения <br> для вашего бизнеса</h2>
+                    <button class="hero-button" type="button">Заказать услугу</button>            
+          </div>
     </section>
 
     <!--Что мы делаем-->
     <section class=" description ">
-        <div class="container" >
+        <div class="container descri-container" >
         <ul class="description-list list">
             <li class="description-item">
                 <h3 class="description-title">Внимание к деталям</h3>
@@ -88,51 +87,56 @@
 
     <!--Чем мы занимаемся-->
     <section class="procces-photo">
+        <div class="container procces-conteiner" >  
             <h2 class="procces">Чем мы занимаемся</h2>
-        <ul class="list">
-            <li> <a class="work-photo"> <img src="./img/img.box1.png" width="370" alt="Кодировка"> </a> </li>
-            <li> <a class="work-photo"> <img src="./img/img .box2.png" width="370" alt="Процес"> </a> </li>
-            <li> <a class="work-photo"> <img src="./img/img.box3.png" width="370" alt="Планшет"> </a> </li>
+        <ul class="photo-link list">
+            <li class="work-photo" > <a> <img src="./img/img.box1.png" width="370" alt="Кодировка"> </a> </li>
+            <li class="work-photo" > <a> <img src="./img/img .box2.png" width="370" alt="Процес"> </a> </li>
+            <li class="work-photo" > <a> <img src="./img/img.box3.png" width="370" alt="Планшет"> </a> </li>
         </ul>
+        </div>
     </section>
     <!--Наша команда-->
     <section class="team">
+        <div class="container team-container" >
             <h2 class="our-team">Наша команда</h2>
-        <ul class="list-team">
-            <li>
-                <img src="./img/img1.jpg" width="270" alt="Игорь Демьяненко/Product Designer">
+        <ul class="list-team list ">
+            <li class="about-team" >
+                <img class="photo-team" src="./img/img1.jpg" width="270" alt="Игорь Демьяненко/Product Designer">
                 <h3 class="name-team">Игорь Демьяненко</h3>
                 <p class="position">Product Designe</p>
             </li>
-            <li>
-                <img src="./img/img2.jpg" width="270" alt="Ольга Репина/Frontend Developer">
+            <li class="about-team" >
+                <img class="photo-team" src="./img/img2.jpg" width="270" alt="Ольга Репина/Frontend Developer">
                 <h3 class="name-team">Ольга Репина</h3>
                 <p class="position">Frontend Develope</p>
             </li>
-            <li>
-                <img src="./img/img3.jpg" width="270" alt="Николай Тарасо/Marketing">
+            <li class="about-team" >
+                <img class="photo-team" src="./img/img3.jpg" width="270" alt="Николай Тарасо/Marketing">
                 <h3 class="name-team">Николай Тарасо</h3>
                 <P class="position">Marketing</P>
             </li>
-            <Li>
-                <img src="./img/img4.jpg" width="270" alt="Михаил Ермаков/UI Designe">
+            <li class="about-team" >
+                <img class="photo-team" src="./img/img4.jpg" width="270" alt="Михаил Ермаков/UI Designe">
                 <h3 class="name-team">Михаил Ермаков</h3>
                 <p class="position">UI Designe</p>
-            </Li>
+            </li>
         </ul>
+        </div>
     </section>
     <!--Футер-->
-    <footer class="footer list ">
+    <footer class="footer  ">
+        <div class="container" >
         <a href="./index.html" class="web-footer link">Web<span class="footer-studio link">Studio</span></a>
         <address>
-            <ul class="list about-footer ">
-                <li> <a class="address link" href="https://goo.gl/maps/qt7cMaWyRHCN1TB96"> г. Киев, пр-т Леси Украинки, 26</a> </li>
-                <li> <a class="footer-mail  link" href="mailto:info@example.com">info@example.com</a></li>
-                <li> <a class="footer-phone  link" href="tel:+380991111111">+380991111111</a> </li>
+            <ul class="list about-footer  ">
+                <li class="footer-list" > <a class="address link drc" href="https://goo.gl/maps/qt7cMaWyRHCN1TB96"> г. Киев, пр-т Леси Украинки, 26</a> </li>
+                <li class="footer-list" > <a class="footer-mail  link drc" href="mailto:info@example.com">info@example.com</a></li>
+                <li class="footer-list" > <a class="footer-phone  link drc" href="tel:+380991111111">+380991111111</a> </li>
             </ul>
         </address>
 
-
+        </div>
     </footer>
 
 
