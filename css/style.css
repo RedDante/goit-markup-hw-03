@@ -43,6 +43,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -62,7 +64,6 @@ img {
 }
 /*-----------------------------------Header/Хедер--------------------------------*/
 .header {
-  background-color: var(--font-color);
   padding-top: 25px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
@@ -158,11 +159,8 @@ img {
 /*-----------------------------------------------Hero------------------------------------*/
 .hero {
   background-color: var(--first-background-color);
-}
-
-.hero-container {
-  padding-top: 300px;
-  padding-bottom: 300px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-text {
@@ -208,6 +206,7 @@ img {
 
 .description-list {
   display: flex;
+  .justify-content: space-between;
 }
 
 .portfolio-card {
@@ -243,16 +242,16 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--fourth-text-color);
+  margin-bottom: 94px;
 }
 
 .photo-link {
   display: flex;
-  margin-top: 50px;
 }
 
 .work-photo:not(:last-child) {
   margin-right: 30px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 /*---------------------------------------------------Наша команда---------------------------------------------*/
 .team {
@@ -264,8 +263,8 @@ img {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 94px;
   margin-bottom: 50px;
+  border-radius: 4px;
   color: var(--fourth-text-color);
 }
 
@@ -281,38 +280,34 @@ img {
 }
 
 .photo-team {
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
 }
 
 .name-team {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
   color: var(--second-title-color);
 }
 .position {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 130px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-
+  padding: 0;
+  margin: 0;
   color: var(--main-text-color);
 }
+
 /*---------------------------------------------Футер-----------------------------------------------*/
 .footer {
   background-color: var(--first-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.about-footer {
-  margin-top: 20px;
 }
 
 .footer-list:not(:last-child) {
@@ -352,6 +347,8 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
+  margin-bottom: 20px;
+  display: flex;
 }
 
 .footer-studio {
@@ -365,40 +362,14 @@ img {
 }
 
 /*-----------------------------------------------------Portfolio----------------------------------------------------*/
-.portfolio-list {
-  flex-wrap: wrap;
+
+/*---------------------------------------Filter Buttons-----------------------------*/
+.filter-list {
   display: flex;
-  align-items: center;
+  margin-bottom: 50px;
+  margin: 0 auto;
 }
 
-.portfolio-item {
-  margin-right: auto;
-  align-items: center;
-}
-
-.portfolio-title {
-  margin-top: 20px;
-}
-
-.web-portfolio {
-  font-family: "Raleway";
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196f3;
-  margin-right: 93px;
-}
-
-.studio-portfolio {
-  font-family: "Raleway";
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-/*---------------------------------------Buttons-----------------------------*/
 .filter-btn {
   background-color: whitesmoke;
   font-family: inherit;
@@ -411,7 +382,6 @@ img {
   color: var(--second-title-color);
   padding: 6px 22px 6px 22px;
   border-style: none;
-  margin-bottom: 50px;
 }
 
 .filter-btn:hover {
@@ -452,23 +422,47 @@ img {
 /*--------------------------------------Progect-------------------------------------*/
 .portfolio-list {
   box-sizing: border-box;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
 }
 
-.first-title {
-  font-style: 700;
-  font-weight: bold;
+.portfolio-link {
+  display: block;
+  text-decoration: none;
+}
+
+.portfolio-item:not(:nth-child(3n + 1)) {
+  margin-left: 30px;
+}
+
+.porttfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 30px;
+}
+
+.portfolio-card {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.portfolio-title {
+  font-family: "Roboto";
+  font-weight: 700;
   font-size: 18px;
-  line-height: 2;
+  line-height: 2px;
   letter-spacing: 0.06em;
-
   color: var(--second-title-color);
+  margin: 0;
 }
 
-.first-heading {
-  font-weight: 400;
+.portfolio-text {
+  font-family: "Roboto";
+  font-weight: 400px;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.87px;
   letter-spacing: 0.03em;
-
-  color: var(--secon-text-color);
+  color: var(--main-text-color);
+  margin: 0;
 }
