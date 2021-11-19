@@ -206,7 +206,7 @@ img {
 
 .description-list {
   display: flex;
-  .justify-content: space-between;
+  justify-content: space-between;
 }
 
 .portfolio-card {
@@ -251,7 +251,6 @@ img {
 
 .work-photo:not(:last-child) {
   margin-right: 30px;
-  padding-bottom: 94px;
 }
 /*---------------------------------------------------Наша команда---------------------------------------------*/
 .team {
@@ -273,14 +272,15 @@ img {
 }
 
 .team-container {
+  padding-top: 94px;
 }
 
 .about-team:not(:last-child) {
   margin-right: 30px;
 }
 
-.photo-team {
-  margin: 0 0 30px 0;
+.about-team {
+  padding-bottom: 94px;
 }
 
 .name-team {
@@ -289,7 +289,7 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin: 0 0 10px 0;
+  margin: 30px 0 10px 0;
   color: var(--second-title-color);
 }
 .position {
@@ -411,6 +411,7 @@ img {
 }
 
 .portfolio-link {
+  display: block;
   text-decoration: none;
   color: var(--main-text);
 }
@@ -428,11 +429,6 @@ img {
 
 .filter-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.portfolio-card {
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .portfolio-title {
