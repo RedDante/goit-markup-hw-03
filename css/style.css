@@ -129,7 +129,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--second-title-color);
   margin-right: 50px;
-  margin-right: ;
 }
 
 .nav-mail {
@@ -194,7 +193,6 @@ img {
 .hero.hero-button:hover,
 .hero.hero-button:active {
   color: #ffffff;
-  background-color: ;
   box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -262,14 +260,22 @@ img {
   border-radius: 4px;
   color: var(--fourth-text-color);
 }
+
+.photo-team {
+  border-radius: 0%;
+}
+
 .list-team {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .about-team:not(:last-child) {
   margin-right: 30px;
-  display: flex;
+}
+
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .about-team {
@@ -278,17 +284,12 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.photo-team {
-  border-radius: 0%;
-}
-
 .name-team {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin: 30px 0 10px 0;
-  text-align: center;
+  margin: 0px 0px 10px 67px;
   color: var(--second-title-color);
 }
 .position {
@@ -296,9 +297,7 @@ img {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  text-align: center;
-  padding: 0;
-  margin: 0;
+  margin-left: 97px;
   color: var(--main-text-color);
 }
 
